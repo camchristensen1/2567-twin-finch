@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -10,7 +11,7 @@
 <body>
 
 <header class="wrapper">
-	<h1><img src="img/logo.png" alt=""></h1>
+	<h1><img src="img/logo.png" alt="TwinFinch Coffee Roastery Logo"></h1>
 	<nav>
 		<ul>
 			<li><a href="#">Home</a></li>
@@ -35,25 +36,22 @@
 	</div>
 </section>
 
-<section class="wrapper">
+<section class="wrapper" id="images">
 	<header>
-		<h2 id="products">Products</h2>
+		<h2>Products</h2>
 	</header>
 	<div class="row">
 		<div class="col-1-2">
 			<p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
-			<p>Learn to brew like the experts! <br><a href="#">Click here for a how to brew tutorial</a></p>
 		</div>
 		<div class="col-1-2">
-			<p>“This extaordinary coffee almost defies descriptio with its aromatic complexity while retaining a classic clarity or structure.” -Coffee Review</p>
-			<p>You can buy from us directly at our Portland storefront located at 457 NW Market Street.</p>
+			<p>Learn to brew like the experts! <br><a href="#">Click here for a how to brew tutorial</a></p>
+			<quote>“This extaordinary coffee almost defies descriptio with its aromatic complexity while retaining a classic clarity or structure.” -Coffee Review</quote>
 		</div>
 	</div>
-</section>
-
-<section class="wrapper">
-		<div class="row">
-			<div class="col-1-2">
+	<div class="row">
+		<section class="col-1-2">
+			<div class="row">
 				<div class="col-1-2">
 					<img src="img/oak-package.png" alt="">
 				</div>
@@ -67,7 +65,9 @@
 					<a href="#">Buy Now!</a>
 				</div>
 			</div>
-			<div class="col-1-2">
+		</section>
+		<section class="col-1-2">
+			<div class="row">
 				<div class="col-1-2">
 					<img src="img/midnight-package.png" alt="">
 				</div>
@@ -81,7 +81,11 @@
 					<a href="#">Buy Now!</a>
 				</div>
 			</div>
-			<div class="col-1-2">
+		</section>
+	</div>
+	<div class="row">
+		<section class="col-1-2">
+			<div class="row">
 				<div class="col-1-2">
 					<img src="img/expresso-package.png" alt="">
 				</div>
@@ -95,7 +99,9 @@
 					<a href="#">Buy Now!</a>
 				</div>
 			</div>
-			<div class="col-1-2">
+		</section>
+		<section class="col-1-2">
+			<div class="row">
 				<div class="col-1-2">
 					<img src="img/sunrise-package.png" alt="">
 				</div>
@@ -109,8 +115,11 @@
 					<a href="#">Buy Now!</a>
 				</div>
 			</div>
-		</div>
-		<p id="width">Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
+		</section>
+	</div>
+	<div id="width">
+		<p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
+	</div>
 </section>
 
 <section id="bg-grey">
@@ -121,19 +130,33 @@
 					<h2>About</h2>
 				</header>
 				<p>Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly focused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
-				<p>For more updates and fun...<br><a href="#">Click Here to Subscribe to our e-news!</a></p>
+				<p>For more updates and fun subscribe to our newsletter below!</p>
+				<form>
+					<label>Email</label>
+					<input type="email" name="Email" placeholder="Enter Email">
+					
+
+					<!-- MORE FORM NEEDED! MORE FORM NEEDED! -->
+
+
+
+					<a href="#">Submit</a>
+				</form>
 			</div>
 			<div class="col-1-2">
 				<header>
 					<h2 id="contact">Contact</h2>
 				</header>
 				<form>
-					<label>Name</label>
-					<input type="text" name="domain-name" placeholder="First and Last Name">
-					<label>Subject</label>
-					<input type="text" name="domain-name" placeholder="Subject">
-					<label>Contact</label>
-					<textarea></textarea>
+					<label>Email
+						<input type="email" name="Email" placeholder="Enter Email">
+					</label>
+					<label>Subject
+						<input type="text" name="Subject" placeholder="Subject">
+					</label>
+					<label>Contact
+						<textarea></textarea>
+					</label>
 					<a href="#">Submit</a>
 				</form>
 			</div>
@@ -145,7 +168,8 @@
 	<header>
 		<h2>Location</h2>
 	</header>
-	<img src="img/map.jpg" alt="map of Portland, OR">
+	<p>You can buy from us directly at our Portland storefront located at 457 NW Market Street.</p>
+	<img src="img/map.png" alt="map of Portland, OR">
 </section>
 
 <footer>
@@ -156,9 +180,9 @@
 			</div>
 			<div class="col-1-2">
 				<ul>
-					<li><a href="www.facebook.com">F</a></li>
-					<li><a href="www.twitter.com">T</a></li>
-					<li><a href="www.linkedin.com">LI</a></li>
+					<li><a href="http://www.facebook.com" target="_blank">F</a></li>
+					<li><a href="http://www.twitter.com" target="_blank">T</a></li>
+					<li><a href="http://www.linkedin.com" target="_blank">LI</a></li>
 				</ul>
 			</div>
 		</div>
