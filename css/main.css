@@ -95,6 +95,16 @@ nav {
 
 /*--------------------------------3 Structure*/
 
+#hero, #bg-grey, #map {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+footer {
+	margin-top: 40px;
+	background-color: #b2aca1;
+}
+
 .bg-blue {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -223,26 +233,37 @@ nav {
 
 /*--------------------------------4 Media*/
 
-footer .col-1-2 ul li:first-child {
-	width: 50px;
-	height: 50px;
+footer ul li a {
+	border: none;
 }
 
-footer .col-1-2 ul li:nth-child(2) {
-	width: 50px;
-	height: 50px;
+footer ul li a:hover {
+	border: none;
+	background: none;
+	opacity: .6;
 }
 
-footer .col-1-2 ul li:last-child {
-	width: 50px;
-	height: 50px;
-}
-
-footer .col-1-2 ul li {
+footer ul li {
 	display: inline;
+	margin-right: 20px;
+}
+
+footer .col-1-2 ul li img {
+	width: 35px;
+	height: 35px;
+	margin-top: 20px;
+}
+
+footer ul {
+	float:right;
 }
 
 /*--------------------------------------4.1 Images*/
+
+#house img {
+	height:300px;
+	margin-left: 50px;
+}
 
 #map {
 	text-align: center;
@@ -266,7 +287,7 @@ h1 img, footer .col-1-2 img {
 }
 
 #bg-grey {
-	background-color: grey;
+	background-color: #b2aca1;
 }
 
 h1 {
