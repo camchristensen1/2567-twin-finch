@@ -44,7 +44,16 @@
 	padding-bottom: 50px;
 }
 
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
 /*--------------------------------------2.1 Headings*/
+
+#hero h3 {
+	font-size: 2.5rem;
+}
 
 h2 {
 	text-align: center;
@@ -52,6 +61,12 @@ h2 {
 
 h2, h3 {
 	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
 
 /*--------------------------------------2.2 Buttons*/
@@ -80,6 +95,16 @@ p a {
 	padding: 0;
 }
 
+a {
+	text-transform: uppercase;
+}
+
+footer ul li a:hover, #click a:hover {
+	border: none;
+	background: none;
+	color: #b2aca1;
+}
+
 /*--------------------------------------2.3 Forms*/
 
 /*--------------------------------------2.4 Lists*/
@@ -94,6 +119,10 @@ nav {
 }
 
 /*--------------------------------3 Structure*/
+
+hr {
+	margin: 40px;
+}
 
 #hero, #bg-grey, #map {
 	padding-top: 40px;
@@ -233,7 +262,7 @@ footer {
 
 /*--------------------------------4 Media*/
 
-footer ul li a {
+footer ul li a, #click a {
 	border: none;
 }
 
