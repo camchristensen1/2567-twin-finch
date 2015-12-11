@@ -49,10 +49,22 @@ p {
 	font-weight: 400;
 }
 
+#hero p:nth-child(6) {
+	font-style: italic;
+}
+
+.text-size {
+	font-size: 1.15rem;
+}
+
+#hero .text-size {
+	font-size: 1.25rem;
+}
+
 /*--------------------------------------2.1 Headings*/
 
 #hero h3 {
-	font-size: 2.5rem;
+	font-size: 2.0rem;
 }
 
 h2 {
@@ -106,6 +118,28 @@ footer ul li a:hover, #click a:hover {
 }
 
 /*--------------------------------------2.3 Forms*/
+
+form {
+	text-align: center;
+	margin-top: 30px;
+}
+
+input, textarea {
+	width: 75%;
+}
+
+input {
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+textarea {
+	height: 90px;
+}
+
+label {
+	font-weight: 600;
+}
 
 /*--------------------------------------2.4 Lists*/
 
