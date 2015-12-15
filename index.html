@@ -10,35 +10,34 @@
 </head>
 <body>
 
-<header class="wrapper">
-	<h1><img src="img/logo.png" alt="TwinFinch Coffee Roastery Logo"></h1>
+<header class="wrapper" id="home">
+	<h1><a href="#home"><img src="img/logo.png" alt="TwinFinch Coffee Roastery Logo"></a></h1>
 	<nav>
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li><a href="#home">Home</a></li>
 			<li><a href="#products">Products</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 </header>
-<section class="wrapper row" id="hero">
-	<div class="col-1-2">
-		<header>
-			<h3>Finch House Blend</h3>
-		</header>
-		<p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
-		<p class="text-size">Medium Blend <br> From Cajamarca &amp; Moyobamba Regions, Peru</p>
-		<p><span>1lb packages $17.95</span><p>
-		<p>Our House Blend was rated a 98 by coffeereview.com!</p>
-		<a href="#">Buy Now!</a>
+<section class="wrapper">
+	<div class="row">
+		<div class="col-1-2" id="hero">
+			<header>
+				<h3>Finch House Blend</h3>
+			</header>
+			<p>Hint of citrus, complemented by flavors of dark chocolate, peanut and light pepper notes.</p>
+			<p class="text-size">Medium Blend <br> From Cajamarca &amp; Moyobamba Regions, Peru</p>
+			<p><span>1lb packages $17.95</span><p>
+			<p>Our House Blend was rated a 98 by coffeereview.com!</p>
+			<a href="#">Buy Now!</a>
+		</div>
+		<div class="col-1-2" id="house">
+			<img src="img/house-package.png" alt="">
+		</div>
 	</div>
-	<div class="col-1-2" id="house">
-		<img src="img/house-package.png" alt="">
-	</div>
-</section>
-
-<section class="wrapper" id="images">
 	<hr>
-	<header>
+	<header id="images">
 		<h2 id="products">Products</h2>
 	</header>
 	<div class="row">
@@ -46,8 +45,8 @@
 			<p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
 		</div>
 		<div class="col-1-2">
-			<p>Learn to brew like the experts! <br><span id="click"><a href="http://google.com" target="_blank">Click here for a how to brew tutorial</span></a></p>
-			<quote>“This extaordinary coffee almost defies descriptio with its aromatic complexity while retaining a classic clarity or structure.” -Coffee Review</quote>
+			<p>Learn to brew like the experts! <br><span id="click"><a href="http://google.com" target="_blank">Click here for a how to brew tutorial</a></span></p>
+			<blockquote>“This extaordinary coffee almost defies descriptio with its aromatic complexity while retaining a classic clarity or structure.” -Coffee Review</blockquote>
 		</div>
 	</div>
 	<div class="row">
@@ -144,17 +143,12 @@
 					<h2 id="contact">Contact</h2>
 				</header>
 				<form>
-					<label>Email</label><br>
-						<input type="email" name="Email" placeholder="Enter Email">
-					<br>
-					<label>Subject</label><br>
-						<input type="text" name="Subject" placeholder="Enter Subject">
-					<br>
-					<label>Contact<br>
-						<textarea></textarea>
-					</label>
-					<br>
-					<br>
+					<label for="email">Email</label>
+						<input type="email" name="Email" placeholder="Enter Email" id="email">
+					<label for="subject">Subject</label>
+						<input type="text" name="Subject" placeholder="Enter Subject" id="subject">
+					<label for="contact2">Contact</label>
+						<textarea id="contact2"></textarea>
 					<a href="#">Submit</a>
 				</form>
 			</div>
@@ -167,20 +161,20 @@
 		<h2>Location</h2>
 	</header>
 	<p><span>You can buy from us directly at our Portland storefront located at 457 NW Market Street.</span></p>
-	<img src="img/map.png" alt="map of Portland, OR">
+	<figure><img src="img/map.jpg" alt="map of Portland, OR"></figure>
 </section>
 
 <footer>
 	<div class="wrapper">
 		<div class="row">
-			<div class="col-1-2">
-				<img src="img/logo.png" alt="">
+			<div class="col-1-2" id="logo">
+				<a href="#home"><figure><img src="img/logo.png" alt="logo"></figure></a>
 			</div>
 			<div class="col-1-2">
 				<ul>
-					<li><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="facebook logo"></a></li>
-					<li><a href="http://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter logo"></a></li>
-					<li><a href="http://www.linkedin.com" target="_blank"><img src="img/linkedin.png" alt="linkedin logo"></a></li>
+					<li><a href="http://www.facebook.com" target="_blank"><figure><img src="img/facebook.png" alt="facebook logo"></figure></a></li>
+					<li><a href="http://www.twitter.com" target="_blank"><figure><img src="img/twitter.png" alt="twitter logo"></figure></a></li>
+					<li><a href="http://www.linkedin.com" target="_blank"><figure><img src="img/linkedin.png" alt="linkedin logo"></figure></a></li>
 				</ul>
 			</div>
 		</div>
